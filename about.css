@@ -1,0 +1,64 @@
+main > div {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 20px;
+    text-align: left;
+}
+
+main > div > h2 {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+p,
+li {
+  font:
+    1rem 'Fira Sans',
+    sans-serif;
+}
+
+p {
+  font-weight: bold;
+}
+
+main > div > p {
+    font-size: 18px;
+}
+
+main {
+    background-color: black;
+    display: grid;
+    grid-template-areas:
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.';
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/*Large Devives*/
+@media only screen and (min-width: 992px) {
+
+    #container2 {
+            grid-area: area2;
+    }
+
+    #container3 {
+        grid-area: area3;
+    }
+
+    #container4 {
+        grid-area: area2;
+    }
+    main {
+        grid-template-areas:
+        '. area3 .'
+        'area2 area3 .' /*Container 2 taking up two positions*/
+        'area2 area3 .'; /*Container 3 taking up three positions*/
+    }
+}

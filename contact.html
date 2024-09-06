@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="VizAssist" />
+    <title>VizAssist</title>
+    <link rel="icon" type="images/x-icon" href="images/Dollar_Sign.svg" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="footer.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>VizAssist</h1>
+        <label for="hamburger_checkbox">
+            <img src="images/hamburger_menu.svg" alt="Menu" id="hamburger_image">
+        </label>
+        <input type="checkbox" id="hamburger_checkbox">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="photos.html">Photos</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active_nav">Contact</a>
+    </nav>
+
+</header>
+
+<form id="contact_form" method="post">
+    <label for="fname">First Name:</label><br />
+    <input type="text" id="fname" name="fname" autocomplete="given-name"><br />
+    <label for="lname">Last Name:</label><br />
+    <input type="text" id="lname" name="lname" autocomplete="family-name"><br />
+    <label for="email">Email:</label><br />
+    <input type="text" id="email" name="email" autocomplete="email"><br />
+    <label for="mobile">Mobile:</label><br />
+    <input type="text" id="mobile" name="mobile" autocomplete="mobile"><br />
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message"></textarea><br /><br />
+    <button type="submit">Submit</button>
+    <button type="Reset">Reset</button>
+</form>
+
+
+
+<footer>
+    <p>
+        <span property="dct:title">VizAssist &copy;</span> by 
+        <span property="cc:attributionName">Jason Visuthiratsopon</span> is licensed under
+        <br> 
+        <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" 
+        rel="license noopener noreferrer">CC BY-ND 4.0
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+    </a></p>
+</footer>
+</body>
+
+
+</html>
